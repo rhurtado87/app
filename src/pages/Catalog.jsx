@@ -40,8 +40,8 @@ function Catalog(){
         _id: "kaskdf"
     },
     {  
-        title: "Accessorize",
-        price: 24.00,
+        title: "Books & Comics",
+        price: 25.00,
         category: "All ages",
         image: "img1.jpg",
         _id: "kaskdf"

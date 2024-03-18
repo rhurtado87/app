@@ -4,7 +4,7 @@ import QuantityPicker from "./QuantityPicker";
 function Product(props){
     return(
         <div className="product">
-            <img src="https://picsum.photos/200" alt="randomimg" />
+            <img src="https://picsum.photos/200" alt="Product" />
             <h4>{props.info.title}</h4>
             <label>${props.info.price}</label>
 

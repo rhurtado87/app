@@ -8,12 +8,16 @@
  */
 import "./Navbar.css";
 
-function Navbar(){
+const Navbar = () => {
     return (
-    <div className="navbar">
-        <h1>A Navbar will be Here</h1>
-    </div>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        </ul>
+    </nav>
     );
-}
+};
 
 export default Navbar;

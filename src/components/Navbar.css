@@ -14,4 +14,19 @@
 }
 .navbar button:hover{
     background-color:rgb(14, 60, 60);
-} 
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}

@@ -1,8 +1,9 @@
 .catalog{
-    background-color: blanchedalmond;
+    background-color: rgb(230, 146, 20);
+    border-radius: 8px;
 }
 
 .catalog h1 {
-    color: darkgray;
+    color: blueviolet;
     margin: 0;
 }

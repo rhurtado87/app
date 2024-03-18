@@ -32,6 +32,20 @@ function Catalog(){
         image: "img1.jpg",
         _id: "kaskdf"
     },
+    {  
+        title: "Accessorize",
+        price: 24.00,
+        category: "All ages",
+        image: "img1.jpg",
+        _id: "kaskdf"
+    },
+    {  
+        title: "Accessorize",
+        price: 24.00,
+        category: "All ages",
+        image: "img1.jpg",
+        _id: "kaskdf"
+    },
     ];
     return(
         <div className="catalog page">
@@ -40,6 +54,8 @@ function Catalog(){
             <Product info={data[1]} />
             <Product info={data[2]} />
             <Product info={data[3]} />
+            <Product info={data[4]} />
+            <Product info={data[5]} />
         </div>
     );
 }

@@ -5,57 +5,62 @@ import Product from '../components/Product';
 function Catalog(){
     const data = [
     {  
-        title: "Trading Cards",
+        title: "Pokemon",
         price: 33.34,
         category: "TCG",
-        image: "img1.jpg",
+        image: "pokemon_collectorChest.jpg",
         _id: "kaskdf"
     },
     {  
         title: "Games",
         price: 25.99,
         category: "Board Games",
-        image: "img1.jpg",
+        image: "dnd_starterSet.jpg",
         _id: "kaskdf"
     },
     {  
         title: "Toys",
         price: 159.35,
         category: "All ages",
-        image: "img1.jpg",
+        image: "toy_90s.jpg",
         _id: "kaskdf"
     },
     {  
         title: "Anime",
         price: 45.00,
         category: "All ages",
-        image: "img1.jpg",
+        image: "anime_80s.jpg",
         _id: "kaskdf"
     },
     {  
         title: "Accessorize",
         price: 24.00,
         category: "All ages",
-        image: "img1.jpg",
+        image: "key_bleach.jpeg",
         _id: "kaskdf"
     },
     {  
         title: "Books & Comics",
         price: 25.00,
         category: "All ages",
-        image: "img1.jpg",
+        image: "popular_manga.png",
+        _id: "kaskdf"
+    },
+    {  
+        title: "Manga",
+        price: 25.00,
+        category: "All ages",
+        image: "popular_manga.png",
         _id: "kaskdf"
     },
     ];
+
     return(
         <div className="catalog page">
             <h1>Our amazing catalog!!</h1>
-            <Product info={data[0]} />
-            <Product info={data[1]} />
-            <Product info={data[2]} />
-            <Product info={data[3]} />
-            <Product info={data[4]} />
-            <Product info={data[5]} />
+            {data.map(prod => (
+            <Product info={prod} />
+            ))};
         </div>
     );
 }

@@ -15,9 +15,10 @@
     border: 1px solid rgb(43, 53, 2);
 }
 
-button {
+.btn-group button {
     width: 40px;
     height: 40px;
+    margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +32,7 @@ button:hover{
     background-color: rgb(41, 112, 112);
 }
 
-p {
+.btn-group p {
     width: 50px;
     display: flex;
     align-items: center;

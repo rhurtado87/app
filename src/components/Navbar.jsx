@@ -8,15 +8,23 @@
  */
 import "./Navbar.css";
 
-const Navbar = () => {
+function Navbar(){
     return (
-    <nav>
-        <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        </ul>
-    </nav>
+        <div>
+        <nav>
+            <ul>
+            <li>
+                <a aria-current="page" href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+                </ul>
+        </nav>
+        </div>
     );
 };
 

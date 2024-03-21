@@ -1,32 +1,13 @@
-.navbar h1{
-    color: rgb(247, 245, 248);
-}
 .navbar{
     height: 56px;
+    background-color: #333;
+}
+
+.navbar h1{
+    color: rgb(156, 18, 224);
+    margin: 0;
 }
 
 .navbar button {
-    color: rgb(248, 248, 248);
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-}
-.navbar button:hover{
-    background-color:rgb(14, 60, 60);
-}
-nav {
-    background-color: #333;
-    color: #ffffff;
-    padding: 10px;
-    
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li {
-    display: inline;
-    margin-right: 20px;
+  font-weight: bold;
 }

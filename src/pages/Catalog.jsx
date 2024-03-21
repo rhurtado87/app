@@ -58,9 +58,10 @@ function Catalog(){
     return(
         <div className="catalog page">
             <h1>Our amazing catalog!!</h1>
+
             {data.map(prod => (
-            <Product info={prod} />
-            ))};
+            <Product key={prod._id}info={prod} />
+            ))}
         </div>
     );
 }

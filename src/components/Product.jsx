@@ -11,11 +11,11 @@ function Product(props){
         <div className="product">
             <img src= {constants.IMAGE_PATH + props.info.image} alt="Product" />
             <h4>{props.info.title}</h4>
-            <label>${props.info.price}</label>
+            <label className="price">${props.info.price}</label>
 
             <QuantityPicker />
         
-        <button onClick={add} className="btn btn-sm btn sucess" >
+        <button onClick={add} className="" >
             Add
             </button>
         </div>

@@ -12,8 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-    <h1>Welcome to my Online Store</h1>
-    <h4>Coming Soon!!!</h4>
       <Navbar />
 
     <Catalog />

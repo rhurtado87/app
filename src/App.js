@@ -3,10 +3,10 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Catalog from './pages/Catalog';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './pages/About';
 import Shopping from './pages/ShoppingList'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

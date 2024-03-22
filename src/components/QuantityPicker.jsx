@@ -1,35 +1,31 @@
 import React, {useState} from "react";
 import "./QuantityPicker.css";
 
-const IncrDecrementBtn = ({minValue = 0, maxValue = 10}) =>{
-    const [count, setCount] = useState(minValue);
+function QuantityPicker(){
+    const [quantity, setQuantity] = useState(0);
 
-    //Funtion to use the incrementing on counter
-const incrementCounter = () =>{
-    if (count < maxValue) {
-        setCount((prevState) => prevState + 1);
+    function increase() {
+        let newVal = quantity + 1;
+        setQuantity(newVal);
     }
-};
-    //funtion to handleDecrementCounter
-const decrementCounter = () => {
-    if (count > minValue) {
-        setCount((prevState) => prevState -  1);
+
+    function decrease(){
+        let newVal = quantity - 1;
+        if (newVal > 0) {
+            setQuantity(newVal);
+        }
     }
-};
+    
+    return(
+        <div className="qt-picker">
+            <button className="btn btn-sm btn-primary" disabled={quantity == 1} onClick={decrease}>
+                -
+            </button>
+            <label>{quantity}</label>
+            <button className="btn btn-sm btn-primary" onClick={increase}>+</button>
+        </div>
+    );
 
-return(
-    <div className="btn-group">
-        <button className="increment-btn" onClick={incrementCounter}>
-        <span className="material-symbols-outlined">add</span>
-        </button>
+}
 
-    <p>{count}</p>
-
-        <button className="decrement-btn" onClick={decrementCounter}>
-            <span className="material-symbols-outlined">remove</span>
-        </button>
-    </div>
-);
-};
-
-export default IncrDecrementBtn; 
+export default QuantityPicker;

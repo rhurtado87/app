@@ -1,4 +1,4 @@
 .qt-picker button{
+    display: flexbox;
     margin: 0 5px;
-
 }

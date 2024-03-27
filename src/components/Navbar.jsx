@@ -1,11 +1,13 @@
 import React from 'react';
 import './Navbar.css';
 
+import {Link} from 'react-router-dom';
+
 function Navbar() {
     return (
-        <nav className="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <nav className="navbar bg-dark border-bottom fixed-top border-body" data-bs-theme="dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Legendary Commander Zone</a>
+                <Link className="navbar-brand" to="/">Legendary Commander Zone</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -17,21 +19,19 @@ function Navbar() {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <Link className="nav-link" to="/about">About</Link>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul className="dropdown-menu dropdown-menu-dark">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/shoppingList">ShoppingList</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/catalog">Catalog</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/admin">Admin</Link>
                             </li>
                         </ul>
                         <form className="d-flex mt-3" role="search">

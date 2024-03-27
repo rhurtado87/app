@@ -10,14 +10,15 @@ function Product(props){
     return(
         <div className="product">
             <img src= {constants.IMAGE_PATH + props.info.image} alt="Product" />
-            <h4>{props.info.title}</h4>
+            <h6>{props.info.title}</h6>
             <label className="price">${props.info.price}</label>
 
+        <div className="controls">
             <QuantityPicker />
-        
-        <button onClick={add} className="btn btn-sm btn-success" >
+        <button onClick={add} className="btn btn-sm btn-outline-success add" >
             Add to Cart
             </button>
+            </div>
         </div>
     );
 }

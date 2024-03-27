@@ -1,0 +1,16 @@
+.admin h3{
+    color: rebeccapurple;
+}
+.admin h1{
+    color: darkcyan;
+}
+.admin .parent{
+    display: flex;
+}
+.admin .prods{
+    display: flex 1;
+}
+
+.admin .coupons {
+    display: flex 2;
+}

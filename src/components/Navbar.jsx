@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top"
-         data-bs-theme="dark">
+        data-bs-theme="dark">
             <div className="container -fluid">
                 <Link className="navbar-brand" to="/">Legendary Commander Zone</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@ function Navbar() {
                                 <Link className="nav-link" to="/catalog">Catalog</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/shoppingList">ShoppingList</Link>
+                                <Link className="nav-link" to="/shoppingList">Shopping List</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/admin">Admin</Link>

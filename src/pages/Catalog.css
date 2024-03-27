@@ -1,9 +1,19 @@
 .catalog{
-    background-color: rgb(230, 146, 20);
     border-radius: 4px;
+    display: block;
+    height: 50%;
 }
 
-.catalog h1 {
-    color: rgb(129, 8, 243);
-    margin: 0;
+.catalog h2 {
+    color: rgb(39, 1, 74);
+}
+.catalog .box{
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }

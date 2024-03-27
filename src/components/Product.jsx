@@ -1,6 +1,7 @@
 import "./Product.css";
 import QuantityPicker from "./QuantityPicker";
 import constants from "../common/config";
+import React from "react";
 
 function Product(props){
     function add(){

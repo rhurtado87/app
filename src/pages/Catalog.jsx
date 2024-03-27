@@ -50,7 +50,7 @@ function Catalog(){
 
     return(
         <div className="catalog page">
-            <h1>Our amazing catalog!!</h1>
+            <h2>Magic: The Gathering Commander</h2>
 
             {data.map(prod => (
             <Product key={prod._id} info={prod} />

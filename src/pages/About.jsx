@@ -11,7 +11,7 @@ function About() {
 
     return (
         <div className="about page">
-            <h3>Ricardo Hurtado</h3>
+            <h3>Contact Us</h3>
 
         {contactVisible ? 
         <div className="box">

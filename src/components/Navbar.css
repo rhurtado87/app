@@ -1,6 +1,7 @@
 .navbar{
     display:flex;
-    height: 48px;
+    height: 55px;
+    
 }
 
 .navbar button {

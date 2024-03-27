@@ -5,8 +5,9 @@ import {Link} from 'react-router-dom';
 
 function Navbar() {
     return (
-        <nav className="navbar bg-dark border-bottom fixed-top border-body" data-bs-theme="dark">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top"
+         data-bs-theme="dark">
+            <div className="container -fluid">
                 <Link className="navbar-brand" to="/">Legendary Commander Zone</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -25,18 +26,18 @@ function Navbar() {
                                 <Link className="nav-link" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/shoppingList">ShoppingList</Link>
+                                <Link className="nav-link" to="/catalog">Catalog</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/catalog">Catalog</Link>
+                                <Link className="nav-link" to="/shoppingList">ShoppingList</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/admin">Admin</Link>
                             </li>
                         </ul>
-                        <form className="d-flex mt-3" role="search">
+                        <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-success" type="submit">Search</button>
+                            <button className="btn btn-outline-succes" type="submit">Search</button>
                         </form>
                     </div>
                 </div>

@@ -2,6 +2,7 @@
 .product {
     background-color: aliceblue;
     border: 1px solid rgb(83, 222, 81);
+    margin-top: 1px;
     margin-bottom: 12px;
     border-radius: 12px;
     vertical-align:top;
